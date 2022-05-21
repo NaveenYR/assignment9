@@ -1,0 +1,113 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: yellow;
+}
+    
+
+.heading{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+.cards{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+}
+.card{
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    padding: 10px;
+    
+}
+.card1{
+    background-color: #3d7e6f;
+    animation:alternate-reverse naveen 4s infinite 1s;
+}
+@keyframes naveen {
+    from{
+         transform:skewX(20deg);
+    }
+    to{
+        transform:skewX(-20deg);
+    }
+        }
+        .card2{
+            background-color: #acacac;
+            animation:alternate-reverse naveen1 2s infinite 0s;
+        
+        }
+        @keyframes naveen1{
+            from{
+                 transform:skewY(20deg);
+            }
+            to{
+                transform:skewY(-20deg);
+            }
+        }
+            .card3{
+                background-color: #3d7e6f;
+                animation:normal naveen2 3s infinite 0s;
+            }
+        
+            @keyframes naveen2{
+                from{
+                    transform: rotateZ(0deg);
+                }
+                to{
+                    transform: rotateZ(360deg);
+                }
+            }
+            .card4{
+                background-color: #3d7e6f;
+                border: 3px solid #10765e;
+                animation:alternate naveen3 4s infinite 0s;
+            }
+            @keyframes naveen3{
+                from{
+                    transform: rotateX(60deg);
+                }
+                to{
+                    transform: rotateX(-60deg);
+                }
+            }
+            .card5{
+                background-color: brown;
+                border: 3px solid #752b2b;
+                animation:alternate naveen4 4s infinite 0s;
+            }
+            @keyframes naveen4{
+                from{
+                    transform: rotateY(70deg);
+                }
+                to{
+                     transform: rotateY(-70deg);
+                }   
+            }.card6{
+                background-color:green;
+                border: 3px solid #1f712b;
+                animation: alternate naveen5 2s infinite 0s;
+            }
+            @keyframes naveen5{
+                from{
+                    transform: rotateZ(10deg);
+                }
+                to{
+                    transform: rotateZ(-90deg);
+                }
+            }
+            .heading2{
+                margin-top: 50px;
+                display: block;
+               text-align: center;
+               font-weight: bold;
+               text-decoration: underline;
+               font-size: xx-large;
+            }

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg2{
+    background: url(./sky.jpg);
+    height: 100vh;
+    width: 98.5%;
+    padding: 20px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.headingwala{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.sun{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    animation:sun normal 300s linear infinite 0s;
+}
+@keyframes sun {
+  100%{
+      transform: translateX(-1000px);
+  }
+}
+
+.bangalore{
+        height:250px;
+        width: 500%;
+        background-image: url(./city.png);
+        z-index:1;
+        position: absolute;
+        bottom: 200px;
+        animation:bangalore 25s linear infinite ;
+        background-repeat: repeat;
+        display: block;
+    }
+    @keyframes bangalore{
+        100%{
+            transform: translateX(-1500px);
+        }
+    } 
+
+    .cd{
+        height:200px;
+        width: 1000%;
+        background-image: url(./road.jpg);
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
+        animation: cd 7s linear infinite;
+        }
+        @keyframes cd {
+            100%{
+            transform:translateX(-2000px);
+            }
+    }
+    .flag img {
+        height: 130px;
+        width: 130px;
+        position: absolute;
+        bottom: 175px;
+        left: 730px;
+        z-index: 2;
+        animation:alternate flag 1s linear infinite ;
+    }
+    @keyframes flag {
+        100%{
+            transform: skewY(-20deg);
+        }
+    }
+
+    .car {
+        width: 400px;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        bottom: 100px;
+        z-index: 1;
+    }
+    .car img {
+        width: 100%;
+        animation:car alternate 0.7s linear infinite;
+    }
+    @keyframes car {
+        0%{
+            transform: translateY(-4px);
+        }
+        50%{
+            transform:translateY(0px);
+        }
+        100%{
+            transform:translateY(-4px);
+        }
+    }
+    .wheels img {
+        width:72px;
+        height: 72px;
+        animation:wheels 0.6s infinite linear ;
+    }
+    .wheels{
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+       bottom:185px;
+       z-index: 2;
+    }
+    @keyframes wheels {
+        100%{
+            transform: rotateZ(360deg);
+        }
+    }
+    .frontwheel{
+        position: absolute;
+        left: 80px;
+    }
+    .backwheel{
+        position: absolute;
+        left: -165px;
+    }
+    .heading{
+        color: white;
+        font-weight: bold;
+        border: rgb(243, 199, 199)  solid;
+        background-color: black;
+        border-radius: 20px;
+        
+    }
